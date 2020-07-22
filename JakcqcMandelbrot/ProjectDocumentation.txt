@@ -1,0 +1,33 @@
+Jeffrey Kerley JakcqcMandelbrot
+UI: Created using sceneBuilder, JavaFXML. Several scenes, Intro.fxml, Mandelbrot.fxml;
+
+MVC:    Model(Mandelbrot.java)
+	View(Intro.fxml, Mandelbrot.fxml)
+	controllers(MandelbrotController.java, IntroController)
+
+Required Code: 
+	
+	1. 	
+		a. Classes: FractalConvergance.java
+		b. Subclasses: Mandelbrot.java extends FractalConvergance.java--line:26 Mandelbrot.java
+		c. Abstract Class: Switchable.java--Line:20 Switchable.java
+		d. Interface: display.java--Line:12 display.java
+	2.	
+		a. HashMap of String and Switchable--Line:22 Switchable.java
+		b. try catch in several places, for reading and writing as well as in loading controllers--Line:32 Switchable.java--Line:71 and Line:89 Mandelbrot.java
+		   as well as several logic statements to prevent words , empty String, and too big numbers for convergence steps--Line:59 MandelbrotController.java
+
+	3. The model is Mandelbrot.java which does all the computing for finding the mandelbrot convergence and color calculation.--Line: 52 MandelbrotController.java
+
+	4. Intro.fxml and Mandelbrot.fxml are two scenes in my application. Mandelbrot.fxml changes based on the user input convergence steps, and redraws the canvas when they enter
+	   a number. It uses newCanvas() to do so. This also draws it based off of what number they saved.Line:53 through 54--Line: 87--Line:102 MandelbrotController.java
+	
+	5. A tab in Intro.fxml has an about us tab which displays info about my application.
+
+	6. In the model there is a readStepFile() and writeStepFile(int Steps) which writes in a number to a text file on the user's machine, which is saved on user input and read 		   out on load.--Line: 69 & 88 Mandelbrot.java--Line:83 MandelbrotController.java
+
+		
+		
+	 
+	
+	

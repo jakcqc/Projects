@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mandelbrot.MandelbrotController">
+   <children>
+      <Canvas fx:id="canvas" height="605.0" layoutX="25.0" layoutY="25.0" width="740.0" />
+      <TextField editable="false" layoutX="14.0" layoutY="11.0" prefHeight="28.0" prefWidth="119.0" text="Convergence Steps:" />
+      <TextField fx:id="Steps" layoutX="133.0" layoutY="11.0" prefHeight="28.0" prefWidth="55.0" text="50" />
+      <Button layoutX="14.0" layoutY="43.0" mnemonicParsing="false" onAction="#reDraw" prefHeight="19.0" prefWidth="174.0" text="Redraw!" textAlignment="CENTER">
+         <font>
+            <Font name="Constantia Bold" size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.4" color="#e488e0" height="37.31" radius="17.785" width="35.83" />
+         </effect>
+      </Button>
+      <Text fx:id="error" layoutX="209.0" layoutY="43.0" stroke="#fc0202" strokeType="OUTSIDE" text="Please enter a number between 0 and 500!" textAlignment="CENTER">
+         <font>
+            <Font name="Constantia Bold Italic" size="19.0" />
+         </font>
+      </Text>
+      <Button layoutX="633.0" layoutY="26.0" mnemonicParsing="false" onAction="#changeScene" text="Home">
+         <font>
+            <Font name="Consolas Bold Italic" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
