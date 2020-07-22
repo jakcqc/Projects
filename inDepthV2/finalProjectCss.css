@@ -1,0 +1,267 @@
+body{
+    font-family: 'Alata', sans-serif !important;
+    /*background-color:aliceblue;*/
+    background-image: url("images/oceanforever.jpg");
+    text-align: center;
+    color: black !important;
+    text-shadow: 1px 0 0 aliceblue, 0 -1px 0 aliceblue, 0 1px 0 aliceblue, -1px 0 0 aliceblue !important;
+    
+}
+#loggedIn{
+    
+    top:0;
+    left: 0;
+    position: absolute;
+    margin: 5px;
+    
+}
+#userAvatar{
+    display: none;
+    top:0px;
+    right:0;
+    
+    margin: 7px;
+    margin-right: 20px;
+    position: absolute;
+    border: 1px solid black ;
+    border-radius: 65px;
+}
+#userAvatar:hover{
+    border: 3px solid black;
+    margin-right: 18px;
+    margin-top: 5px;
+    box-shadow: 2px 0 0 aliceblue, 0 -2px 0 aliceblue, 0 2px 0 aliceblue, -2px 0 0 aliceblue;
+    
+    
+}
+#infoAbout{
+    /*background-image: linear-gradient(lightblue,aliceblue,aliceblue);*/
+    text-align: center;
+     /* color: white; */
+     top:0;
+     left:0;
+     width: 100%;
+       
+    font-size: 25px;
+    /* text-shadow: 3px 3px #b0ceff; */
+    text-shadow: 1px 0 0 aliceblue, 0 -1px 0 aliceblue, 0 1px 0 aliceblue, -1px 0 0 aliceblue;
+}
+#infoInGame{
+    display: none;
+    /* text-shadow: 3px 3px #b0ceff; */
+}
+#infoBar{
+    text-shadow: 1px 0 0 aliceblue, 0 -1px 0 aliceblue, 0 1px 0 aliceblue, -1px 0 0 aliceblue;
+    display: block;
+    margin: 30px auto 0 auto;
+    width: 97%;
+    
+    /* color: white; */
+    padding: 5px;
+    border-top: 4px solid white;
+    font-size: 15px;
+}
+ #runButton:focus{
+   -webkit-animation:colorchange 1.5s infinite alternate;
+}
+@-webkit-keyframes colorchange {
+      0% {
+        
+        background-color: aliceblue;
+      }
+    50%{
+        background-color: mediumslateblue;
+    }
+    100%{
+        background-color: lightblue;
+    }
+      }
+    
+#aboutUs{
+    text-shadow: 1px 0 0 aliceblue, 0 -1px 0 aliceblue, 0 1px 0 aliceblue, -1px 0 0 aliceblue;
+    /* text-shadow: 2px 2px #b0ceff; */
+}
+.userInputFields{
+    position: block;
+    margin: 250px auto;
+    width: 350px;
+    height: 200px;
+}
+#passCheck{
+    display: block;
+    margin: 2px auto;
+    text-align: center;
+}
+.fieldStyle{
+    
+    display: block;
+    margin: 10px auto;
+    width: 280px;
+    height: 35px;
+    padding: 5px;
+    font-size: 25px;
+    font-family: serif;
+    text-align: center;
+    border: none;
+    border-bottom: 3px solid blue;
+    box-shadow: 0px 3px #b0ceff;
+    background-color: aliceblue;
+    opacity: 50%;    
+}
+#logout{
+    position: absolute;
+    border-color: black;
+    left:0;
+    top: 50px;
+    margin: 5px;
+    height: 40px;
+    width: 120px;
+    box-shadow: 0 0 15px 5px #b0ceff inset;
+    display: none;
+    
+}
+.fieldStyle:focus, .fieldStyle:hover{
+    border-bottom: 5px solid darkblue;
+    width: 300px;
+    font-size: 28px;
+    background-image: linear-gradient(aliceblue,#bbddff);
+    outline-width: 0;
+}
+a:link{
+   text-decoration: none; 
+}
+#usernameLogin{
+    top: 90px;
+    left: 0;
+    position: absolute;
+    margin: 5px;
+    
+}
+#realUserName{
+    display:none;
+}
+#loginCheck{
+    display: none;
+}
+.userClickStyle{
+    display: block;
+    margin: 0 auto;
+    width: 110px;
+    height: 30px;
+    border-radius: 10px 0 10px 0;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    border: 2px solid blue;
+ 
+    font-family:serif;
+    padding: 1px;
+    text-align: center;
+    background-color: aliceblue;
+    margin-top: 30px;
+    opacity: 50%;
+}
+#home{
+    border-color: black;
+    box-shadow: 0 0 15px 3px #b0ceff inset;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    margin: 5px;
+    height: 40px;
+    width: 250px;
+    
+}
+.userClickStyle:focus{
+    outline-width: 0;
+    height: 27px;
+    width: 105px;
+    font-size: 15px;
+}
+.userClickStyle:hover{
+    border: 3px solid #2676f5;
+    color: #9bbeff;
+    box-shadow: 0px 0px 5px lightblue;
+}
+#loadingGif{
+    position: relative;
+    text-align: center;
+}
+#loading{
+    border-radius: 100px;
+    opacity: .6;
+}
+
+#runButton{
+    display: block;
+    top:340px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+#center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 0px;
+    user-select: none;
+    opacity: 110%;
+}
+
+#newUserSetup{
+    display: block;
+    color: black;
+}
+
+#nameHolder{
+    position: relative;
+    display: block;
+    margin-top: 20px;
+}
+#chartContainer{
+    display: none;
+    height: 400px;
+    width: 90%;
+    margin: 10px auto;
+    border: 3px solid black;
+}
+.youtubeVideo{
+    display: none;
+   margin: 2px auto;
+    border: 2px solid black;
+}
+#chartContainerChamps{
+    display: none;
+    height: 400px;
+    width: 90%;
+    margin: 0px auto;
+    border: 3px solid black;
+}
+#goldChartContainer{
+    display: none;
+    height: 400px;
+    width: 90%;
+    margin: 30px auto 10px auto;
+    border: 3px solid black;
+    
+}
+
+#itemHolder{
+    
+    display: none;
+    width: 90%;
+    
+    margin: 10px auto;
+    border: 5px solid black;
+    border-radius: 20px;
+    
+}
+#videos{
+    display: none;
+    margin: 5px auto 30px auto;
+}
+#videos h1{
+    /* text-shadow: 3px 3px #b0ceff; */
+}
