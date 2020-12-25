@@ -1,1 +1,1 @@
-![mandelbrotInformation](https://github.com/jakcqc/Projects/new/master/JakcqcMandelbrot/
+![mandelbrotInformation](https://github.com/jakcqc/Projects/blob/master/JakcqcMandelbrot/JakcqcMandelbrot.png)
