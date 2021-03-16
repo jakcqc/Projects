@@ -1,0 +1,5 @@
+Jeffrey Kerley 14310236
+
+My values are almost the same as the expected values. The issue is how I implement the updated bias. Because of how the bias is stored in the array, I was not able to apply the updated bias correctly based on the algorithm I used. Even after assuming the input for the bias is a 1, I could not update them correctly. Everything else works as it should. The forward pass, backprop, gradiant descent, and updated the weights all work right. I double checked the err values and those are correct. I ran more training and could see it getting smaller. This allowed me to see that my problem was updating the bias correctly. 
+
+I followed and used the same assumptions you said in the example, and from class. 
